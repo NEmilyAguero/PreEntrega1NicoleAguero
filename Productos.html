@@ -7,57 +7,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <link rel="shortcut icon" href="imgg/aku.jfif" type="image/x-icon">
 
-
-  <title>
-    Aku Store
-  </title>
- 
   <link href="css/style.css" rel="stylesheet" />
  
-  <link href="script.js" rel="function" />
+ <link rel="" href="script.js">
 </head>
 
 <body>
 
     <header>
-        <div class="menu">
-              <a class="navbar-brand" href="index.html">
-                <span>
-                  Aku Store
-                </span>
-              </a>
+        <div class="carrito">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+                <div class="container">
+                  <a class="navbar-brand" href="index.html">
+                    <img src="imgg/logo.jpg" alt="..." height="150" width="300">
+                  </a>
+              </nav>
 
                 <ul class="menu">
                   <li><a href="Productos.html">Productos</a></li>
+                  <img src="imgg/carro-de-la-compra.png" alt="" width="25" height="25">
+                  <button class="button.btn.btn-outline-dark" type='submit'>
+                    <ul id="carrito-lista">
+                    </ul>
+                    <p>Total: $<span id="carrito-total">0.00</span></p>
+                </button>
+
+                <button class="finalizar-compra-btn" type="submit">
+                    <ul id="finalizar-compra-btn"></ul>
+                    <p>Comprar</p>
+                </button>
                </ul>
-
-               <a href="">
-                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-              </a>
-
-              <li> <aside>
-                <button class="button.btn.btn-outline-dark" type='submit'>
-                          <h2><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
-                              <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
-                            </svg></h2>
-                          <ul id="carrito-lista">
-                          </ul>
-                          <p>Total: $<span id="carrito-total">0.00</span></p>
-                      </button>
-                      <button class="finalizar-compra-btn" type="submit">
-                          <ul id="finalizar-compra-btn"></ul>
-                          <p>Comprar</p>
-                      </button>
+                 
               
-              </aside> </li>
-           
-              
-            
-          </header>
-
-        <h2>
-          Productos
-        </h2>
     
 </header>
 
@@ -95,14 +76,14 @@
     <img src="imgg/9403853668382ats.jpg" alt="Producto 4">
     <h2>Nendoroid Atsushi</h2>
     <p>Precio: $70.000</p>
-    <button onclick="agregarAlCarrito(4)">Agregar al carrito</button>
+    <button onclick="agregarAlCarrito(5)">Agregar al carrito</button>
 </section>
 
 <section class="producto">
-    <img src="imgg/bsdp.jpg" alt="Producto 4">
+    <img src="imgg/bsdp.jpg" alt="Producto 6">
     <h2>Peluches bsd</h2>
     <p>Precio: $5.000</p>
-    <button onclick="agregarAlCarrito(4)">Agregar al carrito</button>
+    <button onclick="agregarAlCarrito(6)">Agregar al carrito</button>
 </section>
 </main>
 
@@ -111,6 +92,6 @@
             ©2023 Aku Tienda
           </p> 
     </footer>
-  
+    <script src="script.js"></script>
   </body>
 </html>
